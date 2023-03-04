@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Recipes API', type: :request do
   describe 'recipes by country' do
     describe 'happy path' do
-      it 'returns a list of recipes by given country' do
+      it 'returns a list of recipes by given country', :vcr do
 
         get "/api/v1/recipes?country=thailand"
 
@@ -45,7 +45,7 @@ RSpec.describe 'Recipes API', type: :request do
         end 
       end
 
-      it 'returns a list of recipes by a random country' do
+      it 'returns a list of recipes by a random country', vcr: { record: :new_episodes } do
 
         get "/api/v1/recipes"
 
@@ -89,7 +89,7 @@ RSpec.describe 'Recipes API', type: :request do
     end
 
     describe 'sad path' do
-      it 'returns data as an empty array if params are an empty string' do
+      it 'returns data as an empty array if params are an empty string', :vcr do
         get "/api/v1/recipes?country="
 
         expect(response).to be_successful
