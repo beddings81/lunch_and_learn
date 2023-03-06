@@ -1,7 +1,7 @@
 class PlacesService
 
   def self.get_attractions_by_radius(lon, lat)
-    response = conn.get("?filter=circle:#{lon},#{lat},20000&categories=tourism.sights&api_key=#{ENV['PLACES_KEY']}")
+    response = conn.get("?filter=circle:#{lon},#{lat},1000&categories=tourism.sights&api_key=#{ENV['PLACES_KEY']}")
     JSON.parse(response.body, symbolize_names: true)[:features]
   end
 
