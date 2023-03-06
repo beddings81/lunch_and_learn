@@ -25,6 +25,13 @@ RSpec.describe CountryService do
       expect(country[:capital]).to be_a(Array)
       expect(country[:capital][0]).to eq("Paris")
 
+      expect(country).to have_key(:capitalInfo)
+      expect(country[:capitalInfo]).to be_a(Hash)
+      expect(country[:capitalInfo]).to have_key(:latlng)
+      expect(country[:capitalInfo][:latlng]).to be_a(Array)
+      expect(country[:capitalInfo][:latlng][0]).to eq(48.87)
+      expect(country[:capitalInfo][:latlng][1]).to eq(2.33)
+
     end
   end
 end
