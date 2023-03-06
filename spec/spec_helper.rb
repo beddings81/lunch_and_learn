@@ -25,6 +25,7 @@ VCR.configure do |config|
   config.filter_sensitive_data('<recipe_key>') { ENV['RECIPE_KEY'] }
   config.filter_sensitive_data('<youtube_key>') { ENV['YOUTUBE_KEY'] }
   config.filter_sensitive_data('<pexel_key>') { ENV['PEXEL_KEY'] }
+  config.filter_sensitive_data('<places_key>') { ENV['PLACES_KEY'] }
 end
 
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
