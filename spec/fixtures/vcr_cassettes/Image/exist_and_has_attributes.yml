@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?per_page=10&query=russia
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<pexel_key>"
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 06 Mar 2023 01:09:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7a36b5f39908b0eb-ATL
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '72275'
+      Cache-Control:
+      - max-age=86400
+      Etag:
+      - W/"13b15fdf646ad2e23bb9c069ac925cf4"
+      Expires:
+      - Tue, 07 Mar 2023 01:09:00 GMT
+      Cf-Cache-Status:
+      - HIT
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '25000'
+      X-Ratelimit-Remaining:
+      - '24966'
+      X-Ratelimit-Reset:
+      - '1680582700'
+      X-Request-Id:
+      - ebbf199e-790c-47a8-bf3c-fa7f527ae905
+      X-Runtime:
+      - '0.083293'
+      X-Server:
+      - anteater
+      Set-Cookie:
+      - __cf_bm=fyfI0scB6uX.KB1AHlUVJ0ffWcnwFpJK6YzFKWPsGDw-1678064940-0-AZXh+lMBCKS/nJstp9P8bpVnxA8h9uQFH3dTYeTo3XtIMxY35vrweZ2hzxUeXcYrOMcZ+rSuKjUJhLvZJJCXPSs=;
+        path=/; expires=Mon, 06-Mar-23 01:39:00 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"per_page":10,"photos":[{"id":236294,"width":2000,"height":2000,"url":"https://www.pexels.com/photo/architecture-building-cathedral-church-236294/","photographer":"Pixabay","photographer_url":"https://www.pexels.com/@pixabay","photographer_id":2659,"avg_color":"#5F82AE","src":{"original":"https://images.pexels.com/photos/236294/pexels-photo-236294.jpeg","large2x":"https://images.pexels.com/photos/236294/pexels-photo-236294.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/236294/pexels-photo-236294.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/236294/pexels-photo-236294.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/236294/pexels-photo-236294.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/236294/pexels-photo-236294.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/236294/pexels-photo-236294.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/236294/pexels-photo-236294.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"St.
+        Peter Basilica, Russia Under Clouded Sky"},{"id":753339,"width":1469,"height":2200,"url":"https://www.pexels.com/photo/saint-basil-s-cathedral-753339/","photographer":"Julius
+        Silver","photographer_url":"https://www.pexels.com/@julius-silver-240301","photographer_id":240301,"avg_color":"#525863","src":{"original":"https://images.pexels.com/photos/753339/pexels-photo-753339.jpeg","large2x":"https://images.pexels.com/photos/753339/pexels-photo-753339.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/753339/pexels-photo-753339.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/753339/pexels-photo-753339.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/753339/pexels-photo-753339.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/753339/pexels-photo-753339.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/753339/pexels-photo-753339.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/753339/pexels-photo-753339.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Saint
+        Basil''s Cathedral"},{"id":415980,"width":4928,"height":3264,"url":"https://www.pexels.com/photo/ancient-architecture-building-castle-415980/","photographer":"Pixabay","photographer_url":"https://www.pexels.com/@pixabay","photographer_id":2659,"avg_color":"#96A9BB","src":{"original":"https://images.pexels.com/photos/415980/pexels-photo-415980.jpeg","large2x":"https://images.pexels.com/photos/415980/pexels-photo-415980.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/415980/pexels-photo-415980.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/415980/pexels-photo-415980.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/415980/pexels-photo-415980.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/415980/pexels-photo-415980.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/415980/pexels-photo-415980.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/415980/pexels-photo-415980.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Brown
+        Concrete Building"},{"id":73869,"width":2439,"height":1757,"url":"https://www.pexels.com/photo/men-in-black-and-red-cade-hats-and-military-uniform-73869/","photographer":"Pixabay","photographer_url":"https://www.pexels.com/@pixabay","photographer_id":2659,"avg_color":"#634738","src":{"original":"https://images.pexels.com/photos/73869/honor-guard-15s-guard-russian-73869.jpeg","large2x":"https://images.pexels.com/photos/73869/honor-guard-15s-guard-russian-73869.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/73869/honor-guard-15s-guard-russian-73869.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/73869/honor-guard-15s-guard-russian-73869.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/73869/honor-guard-15s-guard-russian-73869.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/73869/honor-guard-15s-guard-russian-73869.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/73869/honor-guard-15s-guard-russian-73869.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/73869/honor-guard-15s-guard-russian-73869.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Men
+        in Black and Red Cade Hats and Military Uniform"},{"id":161276,"width":5791,"height":3257,"url":"https://www.pexels.com/photo/gold-mosque-during-sunset-161276/","photographer":"Pixabay","photographer_url":"https://www.pexels.com/@pixabay","photographer_id":2659,"avg_color":"#BE966B","src":{"original":"https://images.pexels.com/photos/161276/moscow-cathedral-mosque-prospekt-mira-ramadan-sky-161276.jpeg","large2x":"https://images.pexels.com/photos/161276/moscow-cathedral-mosque-prospekt-mira-ramadan-sky-161276.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/161276/moscow-cathedral-mosque-prospekt-mira-ramadan-sky-161276.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/161276/moscow-cathedral-mosque-prospekt-mira-ramadan-sky-161276.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/161276/moscow-cathedral-mosque-prospekt-mira-ramadan-sky-161276.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/161276/moscow-cathedral-mosque-prospekt-mira-ramadan-sky-161276.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/161276/moscow-cathedral-mosque-prospekt-mira-ramadan-sky-161276.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/161276/moscow-cathedral-mosque-prospekt-mira-ramadan-sky-161276.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Gold
+        Mosque during Sunset"},{"id":3629813,"width":5184,"height":3456,"url":"https://www.pexels.com/photo/st-basil-s-cathedral-3629813/","photographer":"vierro","photographer_url":"https://www.pexels.com/@vierro-2008087","photographer_id":2008087,"avg_color":"#908080","src":{"original":"https://images.pexels.com/photos/3629813/pexels-photo-3629813.jpeg","large2x":"https://images.pexels.com/photos/3629813/pexels-photo-3629813.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3629813/pexels-photo-3629813.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3629813/pexels-photo-3629813.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3629813/pexels-photo-3629813.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3629813/pexels-photo-3629813.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3629813/pexels-photo-3629813.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3629813/pexels-photo-3629813.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"St.
+        Basil''s Cathedral"},{"id":92412,"width":4000,"height":3000,"url":"https://www.pexels.com/photo/people-walking-on-concrete-road-with-mid-rise-buildings-under-clouded-sky-92412/","photographer":"Lubov
+        Tandit","photographer_url":"https://www.pexels.com/@agapy","photographer_id":6989,"avg_color":"#705B5E","src":{"original":"https://images.pexels.com/photos/92412/pexels-photo-92412.jpeg","large2x":"https://images.pexels.com/photos/92412/pexels-photo-92412.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/92412/pexels-photo-92412.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/92412/pexels-photo-92412.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/92412/pexels-photo-92412.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/92412/pexels-photo-92412.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/92412/pexels-photo-92412.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/92412/pexels-photo-92412.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"People
+        Walking on Concrete Road With Mid Rise Buildings Under Clouded Sky"},{"id":1919077,"width":3072,"height":2304,"url":"https://www.pexels.com/photo/photo-of-woman-dancing-with-saint-basil-s-cathedral-in-moscow-russia-in-the-background-1919077/","photographer":"Arthur
+        Abdurashitov","photographer_url":"https://www.pexels.com/@arthur-abdurashitov-982181","photographer_id":982181,"avg_color":"#90867A","src":{"original":"https://images.pexels.com/photos/1919077/pexels-photo-1919077.jpeg","large2x":"https://images.pexels.com/photos/1919077/pexels-photo-1919077.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1919077/pexels-photo-1919077.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1919077/pexels-photo-1919077.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1919077/pexels-photo-1919077.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1919077/pexels-photo-1919077.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1919077/pexels-photo-1919077.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1919077/pexels-photo-1919077.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Photo
+        of Woman Dancing With Saint Basil''s Cathedral in Moscow, Russia in the Background"},{"id":164583,"width":3988,"height":2620,"url":"https://www.pexels.com/photo/black-building-lighted-under-clear-sky-164583/","photographer":"Pixabay","photographer_url":"https://www.pexels.com/@pixabay","photographer_id":2659,"avg_color":"#242B43","src":{"original":"https://images.pexels.com/photos/164583/pexels-photo-164583.jpeg","large2x":"https://images.pexels.com/photos/164583/pexels-photo-164583.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/164583/pexels-photo-164583.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/164583/pexels-photo-164583.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/164583/pexels-photo-164583.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/164583/pexels-photo-164583.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/164583/pexels-photo-164583.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/164583/pexels-photo-164583.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Black
+        Building Lighted Under Clear Sky"},{"id":1553960,"width":3992,"height":2992,"url":"https://www.pexels.com/photo/ocean-waves-1553960/","photographer":"Yaroslav
+        Shuraev","photographer_url":"https://www.pexels.com/@yaroslav-shuraev","photographer_id":649765,"avg_color":"#9CA9AD","src":{"original":"https://images.pexels.com/photos/1553960/pexels-photo-1553960.jpeg","large2x":"https://images.pexels.com/photos/1553960/pexels-photo-1553960.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1553960/pexels-photo-1553960.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1553960/pexels-photo-1553960.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1553960/pexels-photo-1553960.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1553960/pexels-photo-1553960.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1553960/pexels-photo-1553960.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1553960/pexels-photo-1553960.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Ocean
+        Waves"}],"total_results":2874,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=10\u0026query=russia"}'
+  recorded_at: Mon, 06 Mar 2023 01:09:00 GMT
+recorded_with: VCR 6.1.0

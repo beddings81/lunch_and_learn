@@ -21,6 +21,10 @@ VCR.configure do |config|
   config.configure_rspec_metadata!
   config.allow_http_connections_when_no_cassette = true
   config.filter_sensitive_data('<geoapify_key>') { ENV['GEOAPIFY_KEY'] }
+  config.filter_sensitive_data('<recipe_id>') { ENV['RECIPE_ID'] }
+  config.filter_sensitive_data('<recipe_key>') { ENV['RECIPE_KEY'] }
+  config.filter_sensitive_data('<youtube_key>') { ENV['YOUTUBE_KEY'] }
+  config.filter_sensitive_data('<pexel_key>') { ENV['PEXEL_KEY'] }
 end
 
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
