@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Recipe do
-  it 'exist and has attributes' do
+  it 'exist and has attributes', :vcr do
     recipe = RecipeFacade.recipes_by_country("aruba")[0]
 
 

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe RecipeService do
   describe '#recipes_by_country' do
-    it 'returns recipes based off a country' do
+    it 'returns recipes based off a country', :vcr do
       recipes = RecipeService.recipes_by_country("aruba")
 
       expect(recipes).to be_a(Array)
