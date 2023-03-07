@@ -1,13 +1,4 @@
 class FavoriteSerializer
-  def self.successfully_created
-    {
-      success: "Favorite added successfully"
-    }
-  end
-
-  def self.failed_to_created
-    {
-      failure: "No user with that api key was found"
-    }
-  end
+  include JSONAPI::Serializer
+  attributes :id, :recipe_title, :recipe_link, :country, :created_at
 end
