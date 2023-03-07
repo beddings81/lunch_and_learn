@@ -16,4 +16,15 @@ class ErrorSerializer
     }
   end
 
+  def self.failed_to_create
+    { 
+      error: [ 
+        { 
+          title: "No user with that api key was found",
+          status: 400 
+        }
+      ]
+    }
+  end
+
 end
