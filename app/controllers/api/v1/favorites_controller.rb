@@ -5,7 +5,7 @@ class Api::V1::FavoritesController < ApplicationController
     if user
       render json: FavoriteSerializer.new(user.favorites)
     else
-      render json: FavoritesSerializer.failed_to_created, status: 400
+      render json: ErrorSerializer.failed_to_create, status: 400
     end
   end
 
@@ -15,7 +15,7 @@ class Api::V1::FavoritesController < ApplicationController
       new_favorite = user.favorites.create(favorite_params) 
       render json: FavoritesSerializer.successfully_created, status: 201
     else
-      render json: FavoritesSerializer.failed_to_created, status: 400
+      render json: ErrorSerializer.failed_to_create, status: 400
     end
   end
 

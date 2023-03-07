@@ -49,9 +49,14 @@ RSpec.describe 'Favorites new API' do
         favorite_response = JSON.parse(response.body, symbolize_names: true)
 
         expect(favorite_response).to be_a(Hash)
-        expect(favorite_response).to have_key(:failure)
-        expect(favorite_response[:failure]).to be_a(String)
-        expect(favorite_response[:failure]).to eq("No user with that api key was found")
+        expect(favorite_response).to have_key(:error)
+        expect(favorite_response[:error]).to be_a(Array)
+        favorite_response[:error].each do |error|
+          expect(error).to have_key(:title)
+          expect(error[:title]).to eq("No user with that api key was found")
+          expect(error).to have_key(:status)
+          expect(error[:status]).to eq(400)
+        end
       end
     end
   end
