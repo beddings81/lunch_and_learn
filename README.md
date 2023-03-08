@@ -400,5 +400,5 @@ Running this project requires Rails 5.2.8 and Ruby 2.7.4.
 ## Contributors
  
 <b>Braxton Eddings</b> <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GitHub: <a href="https://github.com/beddings81">@beddings81</a> <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LinkedIn: <a href="https://www.linkedin.com/in/braxton-eddings/">braxton-eddings</a> <br>
+- GitHub: <a href="https://github.com/beddings81">@beddings81</a> <br>
+- LinkedIn: <a href="https://www.linkedin.com/in/braxton-eddings/">braxton-eddings</a> <br>
